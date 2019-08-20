@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OOP thông dụng</title>
+</head>
+<body>
+<script>
+    let dateBirthday = new Date(1990, 10, 10, 3);
+    let datePresent = new Date(2019, 8, 20, 9);
+
+    let yearLived = datePresent.getFullYear() - dateBirthday.getFullYear();
+    let monthLived = yearLived * 12 + datePresent.getMonth() - dateBirthday.getMonth();
+    let dayLived = monthLived * 30 + datePresent.getDate() - dateBirthday.getDate();
+    let hoursLived = dayLived * 24 + datePresent.getHours() - dateBirthday.getHours();
+
+    document.write("Tôi đã sống : " + yearLived + " năm!" + "<br>");
+    document.write("Tối đã sống : " + monthLived + " tháng!" + "<br>");
+    document.write(("Tôi đã sống : " + dayLived + " ngày!" + "<br>"));
+    document.write("Tôi đã sống : " + hoursLived + " giờ" + "<br>");
+
+</script>
+</body>
+</html>
